@@ -13,8 +13,6 @@ script:
 
 
 after_success:
-  uses: 
-    - docker/build-push-action@v2
   - docker build -t avattam/multi-client ./client
   - docker build -t avattam/multi-nginx ./nginx
   - docker build -t avattam/multi-server ./server
