@@ -33,6 +33,7 @@ deploy:
   env: Firstdemo-env
   bucket_name: elasticbeanstalk-ap-south-1-434542027841
   bucket_path: firstdemo-docker-multi
+  edge: true
   on:
     branch: master
   access_key_id: 
