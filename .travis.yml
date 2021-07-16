@@ -30,11 +30,11 @@ after_success:
   
 deploy:
   provider: elasticbeanstalk
-  region: 'ap-south-1'
-  app: 'firstdemo'
-  env: 'Firstdemo-env'
-  bucket_name: 'elasticbeanstalk-ap-south-1-434542027841'
-  bucket_path: 'firstdemo-docker-multi'
+  region: ap-south-1
+  app: firstdemo
+  env: Firstdemo-env
+  bucket_name: elasticbeanstalk-ap-south-1-434542027841
+  bucket_path: firstdemo-docker-multi
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
